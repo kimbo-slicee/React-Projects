@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary-50: #E6F4F5;
+  --color-primary-100: #CCE9EB;
+  --color-primary-200: #99D3D7;
+  --color-primary-250:#83C5BE;
+  --color-primary-300: #66BDC3;
+  --color-primary-400: #33A7AF;
+  --color-primary-500: #006D77; 
+  --color-primary-600: #005A63;
+  --color-primary-700: #00474F;
+  --color-primary-800: #00343B;
+  --color-primary-900: #002127;
+}
+
+.dark {
+  --color-primary-50: #002127;
+  --color-primary-100: #00343B;
+  --color-primary-200: #00474F;
+  --color-primary-300: #005A63;
+  --color-primary-400: #006D77;
+  --color-primary-500: #33A7AF;
+  --color-primary-600: #66BDC3;
+  --color-primary-700: #99D3D7;
+  --color-primary-800: #CCE9EB;
+  --color-primary-900: #E6F4F5;
+  --bg-color-main:#F2F1F1
+}
+
+
+@layer utilities {
+
+  .bg-primary-50 { background-color: var(--color-primary-50); }
+  .bg-primary-100 { background-color: var(--color-primary-100); }
+  .bg-primary-200 { background-color: var(--color-primary-200); } 
+  .bg-primary-250 { background-color: var(--color-primary-250); }
+  .bg-primary-300 { background-color: var(--color-primary-300); }
+  .bg-primary-500 { background-color: var(--color-primary-500); }
+  .bg-primary-600 { background-color: var(--color-primary-600); }
+  .bg-primary-700 { background-color: var(--color-primary-700); }
+  .bg-primary-800 { background-color: var(--color-primary-800); }
+  .bg-primary-900 { background-color: var(--color-primary-900); }
+
+  .text-primary-500 { color: var(--color-primary-500); }
+  .text-primary-600 { color: var(--color-primary-600); }
+  .text-primary-500:hover { color: var(--color-primary-600); }
+
+  .ring-primary-100 { --tw-ring-color: var(--color-primary-100); }
+
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container { max-width: 640px; }
+  }
+
+  @media (min-width: 768px) {
+    .container { max-width: 768px; }
+  }
+
+  @media (min-width: 1024px) {
+    .container { max-width: 1024px; }
+  }
+
+  @media (min-width: 1280px) {
+    .container { max-width: 1280px; }
+  }
+
+  @media (min-width: 1536px) {
+    .container { max-width: 1536px; }
+  }
+}
